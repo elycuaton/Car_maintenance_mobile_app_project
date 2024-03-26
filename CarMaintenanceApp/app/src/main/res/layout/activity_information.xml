@@ -7,9 +7,6 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
-        <!-- Rest of your layout -->
-
-
         <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
@@ -32,6 +29,7 @@
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="75dp"
+        android:contentDescription="@string/img_background"
         android:scaleType="fitCenter"
         android:src="@drawable/logo"
         app:srcCompat="@drawable/logo" />
@@ -57,7 +55,8 @@
                 android:inputType="textPersonName"
                 android:padding="16dp"
                 android:textColorHint="@color/darkGray"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:importantForAutofill="no" />
 
 
             <EditText
@@ -68,7 +67,9 @@
                 android:inputType="text"
                 android:maxLength="10"
                 android:maxLines="1"
-                android:textColor="#121010" />
+                android:textColor="#121010"
+                tools:ignore="TextFields"
+                android:autofillHints="" />
 
             <EditText
                 android:id="@+id/model"
@@ -78,7 +79,8 @@
                 android:inputType="text"
                 android:maxLength="10"
                 android:maxLines="1"
-                android:textColor="#121010" />
+                android:textColor="#121010"
+                android:autofillHints="" />
 
             <EditText
                 android:id="@+id/year"
@@ -88,7 +90,8 @@
                 android:inputType="text"
                 android:maxLength="10"
                 android:maxLines="1"
-                android:textColor="#121010" />
+                android:textColor="#121010"
+                android:importantForAutofill="no" />
 
             <EditText
                 android:id="@+id/vin"
@@ -98,9 +101,8 @@
                 android:inputType="text"
                 android:maxLength="10"
                 android:maxLines="1"
-                android:textColor="#121010" />
-
-
+                android:textColor="#121010"
+                android:importantForAutofill="no" />
 
             <Button
                 android:id="@+id/submitVehicleInfo"
