@@ -20,10 +20,11 @@
             android:id="@+id/imageView_LogoBlack"
             android:layout_width="match_parent"
             android:layout_height="140dp"
-            android:scaleType="centerCrop"
             android:adjustViewBounds="true"
-            android:src="@drawable/logo"
-            android:contentDescription="@string/logo_black" />
+            android:contentDescription="@string/logo_black"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logoblack"
+            app:srcCompat="@drawable/logo" />
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView

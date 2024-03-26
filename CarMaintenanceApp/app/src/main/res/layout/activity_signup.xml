@@ -122,7 +122,7 @@
             android:textColorHint="#EFE0E0" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btnSignUp"
             android:layout_width="290dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="370dp"
