@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_vehicle"
+        android:icon="@drawable/vehicle"
+        android:title="@string/vehicle_info" />
+    <item
+        android:id="@+id/navigation_services"
+        android:icon="@drawable/service"
+        android:title="@string/services" />
+
+    <item
+        android:id="@+id/navigation_schedule"
+        android:icon="@drawable/schedule"
+        android:title="@string/schedule" />
+    <item
+        android:id="@+id/navigation_logout"
+        android:icon="@drawable/logout"
+        android:title="@string/logout" />
+</menu>
+

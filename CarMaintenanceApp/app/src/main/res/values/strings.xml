@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Car Maintenance App</string>
+    <string name="user_login">User Login</string>
+    <string name="img_background">Background</string>
+    <string name="name_hint">Name</string>
+    <string name="email_hint">Email</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="dob_hint">Date of Birth</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="sign_in">Sign in to continue.</string>
+    <string name="log_in">Login</string>
+    <string name="no_account">Dont have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="with_account">Already have an account?</string>
+    <string name="add_car">Add Car</string>
+    <string name="delete">Delete</string>
+    <string name="model">Model</string>
+    <string name="vehicle_name">Vehicle Name</string>
+    <string name="plate_number">Plate Number</string>
+    <string name="year">Year</string>
+    <string name="logo_black">Logo Black</string>
+    <string name="vehicle_info">Vehicle Info</string>
+    <string name="logout">Logout</string>
+    <string name="services">Service</string>
+    <string name="schedule">Schedule</string>
+    <string name="vehicle_name_hint">Vehicle Name</string>
+    <string name="plate_number_hint">Plate Number</string>
+    <string name="model_hint">Model</string>
+    <string name="year_hint">Year</string>
+    <string name="vehicle_vin_hint">VIN</string>
+    <string name="submit_vehicle_info">Submit Vehicle Info</string>
+
+
+</resources>

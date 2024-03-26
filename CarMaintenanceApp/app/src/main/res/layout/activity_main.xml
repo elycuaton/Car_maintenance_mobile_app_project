@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgView_background"
+        android:layout_width="397dp"
+        android:layout_height="811dp"
+        android:layout_margin="20dp"
+        android:adjustViewBounds="false"
+        android:foregroundTint="#3A3737"
+        android:importantForAccessibility="no"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mainbg"
+        tools:ignore="ImageContrastCheck"
+        tools:srcCompat="@drawable/mainbg" />
+
+    <ImageView
+        android:id="@+id/imageView_logo"
+        android:layout_width="175dp"
+        android:layout_height="77dp"
+        android:contentDescription="logo"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/imgView_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.083"
+        app:srcCompat="@drawable/logo"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView_UserLogin"
+        android:layout_width="327dp"
+        android:layout_height="76dp"
+        android:background="#00FFFFFF"
+        android:gravity="center"
+        android:text="@string/welcome_back"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView_SignIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView_SignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:background="#00FFFFFF"
+        android:text="@string/sign_in"
+        android:textColor="#F3EFEF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/overlayFrame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/overlayFrame"
+        android:layout_width="330dp"
+        android:layout_height="285dp"
+        android:background="#34FFFFFF"
+        android:padding="16dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65">
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="@string/email_hint"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="#D5CDCD"
+            android:textColorHint="#EFE0E0" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="10dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/password_hint"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="#D5CDCD"
+            android:textColorHint="#EFE0E0" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="292dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#E60C0C"
+            android:gravity="center"
+            android:text="@string/log_in"
+            android:textColor="#EFECEC"
+            android:textSize="20sp"
+            app:iconTint="#A61616" />
+
+        <TextView
+            android:id="@+id/textViewNoAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginBottom="1dp"
+            android:text="@string/no_account"
+            android:textColor="#F6F3F3"
+            android:textSize="16sp"
+            tools:text="@string/no_account" />
+
+        <TextView
+            android:id="@+id/textViewSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginBottom="1dp"
+            android:text="@string/sign_up"
+            android:textAllCaps="false"
+            android:textColor="#F50000"
+            android:textSize="16sp"
+            tools:ignore="TextContrastCheck"
+            tools:text="@string/sign_up" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
