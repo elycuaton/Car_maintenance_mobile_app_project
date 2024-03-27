@@ -33,12 +33,13 @@
         android:scaleType="fitCenter"
         android:src="@drawable/logo"
         app:srcCompat="@drawable/logo" />
+
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="647dp"
         android:layout_marginTop="78dp"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        app:layout_constraintBottom_toTopOf="@id/bottom_navigation">
+        app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -46,69 +47,111 @@
             android:orientation="vertical"
             android:padding="16dp">
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:text="@string/vehicle_name_hint"
+                android:textColor="@color/darkGray"
+                android:textSize="14sp" />
+
             <EditText
                 android:id="@+id/vehicleName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:hint="@string/vehicle_name_hint"
+                android:layout_marginTop="1dp"
+
+                android:importantForAutofill="no"
                 android:inputType="textPersonName"
                 android:padding="16dp"
                 android:textColorHint="@color/darkGray"
-                android:textSize="16sp"
-                android:importantForAutofill="no" />
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/plate_number"
+                android:textColor="@color/darkGray"
+                android:textSize="14sp" />
 
 
             <EditText
                 android:id="@+id/plateNumber"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/plate_number_hint"
+                android:autofillHints=""
+
                 android:inputType="text"
                 android:maxLength="10"
                 android:maxLines="1"
                 android:textColor="#121010"
-                tools:ignore="TextFields"
-                android:autofillHints="" />
+                tools:ignore="TextFields" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/model"
+                android:textColor="@color/darkGray"
+                android:textSize="14sp" />
 
             <EditText
                 android:id="@+id/model"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/model_hint"
+                android:autofillHints=""
+
                 android:inputType="text"
                 android:maxLength="10"
                 android:maxLines="1"
-                android:textColor="#121010"
-                android:autofillHints="" />
+                android:textColor="#121010" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/year"
+                android:textColor="@color/darkGray"
+                android:textSize="14sp" />
 
             <EditText
                 android:id="@+id/year"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/year_hint"
+
+                android:importantForAutofill="no"
                 android:inputType="text"
                 android:maxLength="10"
                 android:maxLines="1"
-                android:textColor="#121010"
-                android:importantForAutofill="no" />
+                android:textColor="#121010" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/vehicle_vin_hint"
+                android:textColor="@color/darkGray"
+                android:textSize="14sp" />
 
             <EditText
                 android:id="@+id/vin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/vehicle_vin_hint"
+
+                android:importantForAutofill="no"
                 android:inputType="text"
                 android:maxLength="10"
                 android:maxLines="1"
-                android:textColor="#121010"
-                android:importantForAutofill="no" />
+                android:textColor="#121010" />
 
             <Button
                 android:id="@+id/submitVehicleInfo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/submit_vehicle_info" />
+                android:backgroundTint="#F40505"
+                android:text="@string/submit"
+                android:textColor="#100F0F" />
         </LinearLayout>
     </ScrollView>
 
