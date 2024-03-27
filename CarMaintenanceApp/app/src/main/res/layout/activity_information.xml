@@ -7,7 +7,7 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
+    <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,7 +15,9 @@
         android:background="?android:attr/windowBackground"
         app:itemIconSize="32dp"
         app:labelVisibilityMode="labeled"
-        app:menu="@menu/bottom_nav_menu"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -36,7 +38,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="647dp"
+        android:layout_height="645dp"
         android:layout_marginTop="78dp"
         app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
         app:layout_constraintTop_toBottomOf="@+id/toolbar">
@@ -52,7 +54,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="1dp"
                 android:text="@string/vehicle_name_hint"
-                android:textColor="@color/darkGray"
+                android:textColor="#616161"
                 android:textSize="14sp" />
 
             <EditText
@@ -60,19 +62,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="1dp"
-
+                android:hint="@string/hint"
                 android:importantForAutofill="no"
                 android:inputType="textPersonName"
                 android:padding="16dp"
                 android:textColorHint="@color/darkGray"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:text="@string/plate_number"
-                android:textColor="@color/darkGray"
+                android:textColor="#616161"
                 android:textSize="14sp" />
 
 
@@ -81,19 +84,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:autofillHints=""
-
+                android:hint="@string/hint"
                 android:inputType="text"
                 android:maxLength="10"
                 android:maxLines="1"
+                android:minHeight="48dp"
                 android:textColor="#121010"
-                tools:ignore="TextFields" />
+                tools:ignore="TextFields,SpeakableTextPresentCheck" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:text="@string/model"
-                android:textColor="@color/darkGray"
+                android:textColor="#616161"
                 android:textSize="14sp" />
 
             <EditText
@@ -101,49 +105,55 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:autofillHints=""
-
+                android:hint="@string/hint"
                 android:inputType="text"
                 android:maxLength="10"
                 android:maxLines="1"
-                android:textColor="#121010" />
+                android:minHeight="48dp"
+                android:textColor="#121010"
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:text="@string/year"
-                android:textColor="@color/darkGray"
+                android:textColor="#616161"
                 android:textSize="14sp" />
 
             <EditText
                 android:id="@+id/year"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
+                android:hint="@string/year"
                 android:importantForAutofill="no"
                 android:inputType="text"
                 android:maxLength="10"
                 android:maxLines="1"
-                android:textColor="#121010" />
+                android:minHeight="48dp"
+                android:textColor="#121010"
+                tools:ignore="DuplicateSpeakableTextCheck" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:text="@string/vehicle_vin_hint"
-                android:textColor="@color/darkGray"
+                android:textColor="#616161"
                 android:textSize="14sp" />
 
             <EditText
                 android:id="@+id/vin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
+                android:hint="@string/hint"
                 android:importantForAutofill="no"
                 android:inputType="text"
                 android:maxLength="10"
                 android:maxLines="1"
-                android:textColor="#121010" />
+                android:minHeight="48dp"
+                android:textColor="#121010"
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
                 android:id="@+id/submitVehicleInfo"
@@ -151,7 +161,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#F40505"
                 android:text="@string/submit"
-                android:textColor="#100F0F" />
+                android:textColor="#000000" />
         </LinearLayout>
     </ScrollView>
 
