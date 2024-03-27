@@ -40,6 +40,7 @@
     <string name="vehicle_vin_hint">VIN</string>
     <string name="submit">Submit</string>
     <string name="add_vehicle"> Add Vehicle</string>
+    <string name="hint"> </string>
 
 
 </resources>
