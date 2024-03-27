@@ -38,7 +38,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="645dp"
+        android:layout_height="508dp"
         android:layout_marginTop="78dp"
         app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
         app:layout_constraintTop_toBottomOf="@+id/toolbar">
