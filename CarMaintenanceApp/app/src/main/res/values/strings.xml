@@ -19,7 +19,7 @@
     <string name="welcome_back">Welcome Back</string>
     <string name="sign_in">Sign in to continue.</string>
     <string name="log_in">Login</string>
-    <string name="no_account">Dont have an account?</string>
+    <string name="no_account">Don\'t have an account?</string>
     <string name="sign_up">Sign Up</string>
     <string name="with_account">Already have an account?</string>
     <string name="add_car">Add Car</string>
@@ -39,11 +39,9 @@
     <string name="hint"> </string>
     <string name="mileage"> Mileage </string>
     <string name="notes"> Notes </string>
-    <string name="spinner_hint">Choose a service...</string>
+    <string name="spinner_hint">Choose a service…</string>
     <string name="select_date">Select Date</string>
     <string name="add_service">Add Service</string>
     <string name="save">Save</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
-
-
 </resources>

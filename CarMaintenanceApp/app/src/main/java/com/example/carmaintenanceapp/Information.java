@@ -23,6 +23,8 @@ public class Information extends AppCompatActivity {
                 selectedFragment = new ServiceFragment();
             } else if (id == R.id.navigation_schedule) {
                 selectedFragment = new ScheduleFragment();
+            } else if (id == R.id.navigation_logout) {
+                selectedFragment = new LogoutFragment();
             }
 
 

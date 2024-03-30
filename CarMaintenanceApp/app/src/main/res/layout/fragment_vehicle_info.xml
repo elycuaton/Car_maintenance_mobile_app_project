@@ -7,7 +7,8 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="78dp">
+        android:layout_marginTop="78dp"
+        tools:ignore="UselessParent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -33,7 +34,8 @@
                 android:inputType="textPersonName"
                 android:padding="16dp"
                 android:textColorHint="@color/darkGray"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -54,7 +56,8 @@
                 android:maxLength="10"
                 android:maxLines="1"
                 android:minHeight="48dp"
-                android:textColor="#121010" />
+                android:textColor="#121010"
+                tools:ignore="TextFields,SpeakableTextPresentCheck" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -74,7 +77,8 @@
                 android:maxLength="10"
                 android:maxLines="1"
                 android:minHeight="48dp"
-                android:textColor="#121010" />
+                android:textColor="#121010"
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -94,7 +98,8 @@
                 android:maxLength="10"
                 android:maxLines="1"
                 android:minHeight="48dp"
-                android:textColor="#121010" />
+                android:textColor="#121010"
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -114,7 +119,8 @@
                 android:maxLength="10"
                 android:maxLines="1"
                 android:minHeight="48dp"
-                android:textColor="#121010" />
+                android:textColor="#121010"
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -128,13 +134,14 @@
                 android:id="@+id/mileage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/hint"
                 android:importantForAutofill="no"
                 android:inputType="text"
                 android:maxLength="10"
                 android:maxLines="1"
                 android:minHeight="48dp"
-                android:textColor="#121010" />
+                android:textColor="#121010"
+                android:textColorHint="#546E7A"
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
                 android:id="@+id/submitVehicleInfo"

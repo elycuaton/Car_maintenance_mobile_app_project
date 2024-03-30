@@ -6,51 +6,51 @@
     android:padding="16dp"
     android:layout_marginTop="78dp">
 
-    <!-- Spinner for choosing service type -->
     <Spinner
         android:id="@+id/spinnerServiceType"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp" />
+        android:layout_marginBottom="8dp"
+        android:minHeight="48dp" />
 
-    <!-- TextView for picking a date -->
     <TextView
         android:id="@+id/textViewSelectDate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/select_date"
-        android:padding="16dp"
-        android:gravity="start|center_vertical"
+        android:layout_marginBottom="8dp"
         android:background="?android:attr/selectableItemBackground"
         android:clickable="true"
         android:focusable="true"
-        android:layout_marginBottom="8dp" />
+        android:gravity="start|center_vertical"
+        android:hint="@string/select_date"
+        android:padding="16dp"
+        android:textColorHint="#546E7A" />
 
-    <!-- EditText for notes -->
     <EditText
         android:id="@+id/editTextNotes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/notes"
-        android:inputType="textMultiLine"
+        android:layout_marginBottom="16dp"
         android:gravity="top"
-        android:layout_marginBottom="16dp" />
+        android:hint="@string/notes"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine"
+        android:minHeight="48dp" />
 
-    <!-- Button to Add Service -->
     <Button
         android:id="@+id/buttonAddService"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/add_service"
-        android:layout_marginBottom="16dp" />
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#E10404"
+        android:text="@string/add_service" />
 
-    <!-- Save Button -->
     <Button
         android:id="@+id/buttonSave"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
         android:text="@string/save"
-        android:backgroundTint="@color/darkGray"
         android:textColor="@color/white" />
 
 </LinearLayout>
