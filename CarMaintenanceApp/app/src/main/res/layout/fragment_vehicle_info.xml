@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VehicleInfoFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="78dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:text="@string/vehicle_name"
+                android:textColor="#616161"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/vehicleName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:hint="@string/hint"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:padding="16dp"
+                android:textColorHint="@color/darkGray"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/plate_number"
+                android:textColor="#616161"
+                android:textSize="14sp" />
+
+
+            <EditText
+                android:id="@+id/plateNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:hint="@string/hint"
+                android:inputType="text"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:minHeight="48dp"
+                android:textColor="#121010" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/model"
+                android:textColor="#616161"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:hint="@string/hint"
+                android:inputType="text"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:minHeight="48dp"
+                android:textColor="#121010" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/year"
+                android:textColor="#616161"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:minHeight="48dp"
+                android:textColor="#121010" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/vehicle_vin"
+                android:textColor="#616161"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/vin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:minHeight="48dp"
+                android:textColor="#121010" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/mileage"
+                android:textColor="#616161"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/mileage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:minHeight="48dp"
+                android:textColor="#121010" />
+
+            <Button
+                android:id="@+id/submitVehicleInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="#F40505"
+                android:text="@string/submit"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

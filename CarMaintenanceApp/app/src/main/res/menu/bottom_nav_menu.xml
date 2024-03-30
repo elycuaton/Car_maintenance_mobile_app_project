@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/navigation_vehicle"
+        android:id="@+id/navigation_vehicle_info"
         android:icon="@drawable/vehicle"
         android:title="@string/vehicle_info" />
     <item
@@ -18,4 +18,3 @@
         android:icon="@drawable/logout"
         android:title="@string/logout" />
 </menu>
-

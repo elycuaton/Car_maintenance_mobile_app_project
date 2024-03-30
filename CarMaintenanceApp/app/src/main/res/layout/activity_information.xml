@@ -5,19 +5,8 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
         tools:context=".MainActivity">
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:background="?android:attr/windowBackground"
-        app:itemIconSize="32dp"
-        app:labelVisibilityMode="labeled"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_nav_menu" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -36,180 +25,23 @@
         android:src="@drawable/logo"
         app:srcCompat="@drawable/logo" />
 
-    <ScrollView
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="78dp"
-        app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        tools:ignore="TextSizeCheck">
+        android:layout_gravity="bottom"
+        android:background="?android:attr/windowBackground"
+        app:itemIconSize="32dp"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="16dp">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="1dp"
-                android:text="@string/vehicle_name"
-                android:textColor="#616161"
-                android:textSize="14sp" />
-
-            <EditText
-                android:id="@+id/vehicleName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="1dp"
-                android:hint="@string/hint"
-                android:importantForAutofill="no"
-                android:inputType="textPersonName"
-                android:padding="16dp"
-                android:textColorHint="@color/darkGray"
-                android:textSize="16sp"
-                tools:ignore="SpeakableTextPresentCheck" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:text="@string/plate_number"
-                android:textColor="#616161"
-                android:textSize="14sp" />
-
-
-            <EditText
-                android:id="@+id/plateNumber"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:autofillHints=""
-                android:hint="@string/hint"
-                android:inputType="text"
-                android:maxLength="10"
-                android:maxLines="1"
-                android:minHeight="48dp"
-                android:textColor="#121010"
-                tools:ignore="TextFields,SpeakableTextPresentCheck" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:text="@string/model"
-                android:textColor="#616161"
-                android:textSize="14sp" />
-
-            <EditText
-                android:id="@+id/model"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:autofillHints=""
-                android:hint="@string/hint"
-                android:inputType="text"
-                android:maxLength="10"
-                android:maxLines="1"
-                android:minHeight="48dp"
-                android:textColor="#121010"
-                tools:ignore="SpeakableTextPresentCheck" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:text="@string/year"
-                android:textColor="#616161"
-                android:textSize="14sp" />
-
-            <EditText
-                android:id="@+id/year"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/hint"
-                android:importantForAutofill="no"
-                android:inputType="text"
-                android:maxLength="10"
-                android:maxLines="1"
-                android:minHeight="48dp"
-                android:textColor="#121010"
-                tools:ignore="DuplicateSpeakableTextCheck,SpeakableTextPresentCheck" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:text="@string/vehicle_vin"
-                android:textColor="#616161"
-                android:textSize="14sp" />
-
-            <EditText
-                android:id="@+id/vin"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/hint"
-                android:importantForAutofill="no"
-                android:inputType="text"
-                android:maxLength="10"
-                android:maxLines="1"
-                android:minHeight="48dp"
-                android:textColor="#121010"
-                tools:ignore="SpeakableTextPresentCheck" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:text="@string/mileage"
-                android:textColor="#616161"
-                android:textSize="14sp" />
-
-            <EditText
-                android:id="@+id/mileage"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/hint"
-                android:importantForAutofill="no"
-                android:inputType="text"
-                android:maxLength="10"
-                android:maxLines="1"
-                android:minHeight="48dp"
-                android:textColor="#121010"
-                tools:ignore="SpeakableTextPresentCheck" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:text="@string/notes"
-                android:textColor="#616161"
-                android:textSize="14sp" />
-
-            <EditText
-                android:id="@+id/notes"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/hint"
-                android:importantForAutofill="no"
-                android:inputType="text"
-                android:maxLength="10"
-                android:maxLines="1"
-                android:minHeight="48dp"
-                android:textColor="#121010"
-                tools:ignore="SpeakableTextPresentCheck" />
-
-
-            <Button
-                android:id="@+id/submitVehicleInfo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:backgroundTint="#F40505"
-                android:text="@string/submit"
-                android:textColor="#000000" />
-        </LinearLayout>
-    </ScrollView>
-
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_navigation" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
