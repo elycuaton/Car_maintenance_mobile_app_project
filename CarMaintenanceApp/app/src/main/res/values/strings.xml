@@ -33,14 +33,12 @@
     <string name="logout">Logout</string>
     <string name="services">Service</string>
     <string name="schedule">Schedule</string>
-    <string name="vehicle_name_hint">Vehicle Name</string>
-    <string name="plate_number_hint">Plate Number</string>
-    <string name="model_hint">Model</string>
-    <string name="year_hint">Year</string>
-    <string name="vehicle_vin_hint">VIN</string>
+    <string name="vehicle_vin">VIN</string>
     <string name="submit">Submit</string>
     <string name="add_vehicle"> Add Vehicle</string>
     <string name="hint"> </string>
+    <string name="mileage"> Mileage </string>
+    <string name="notes"> Notes </string>
 
 
 </resources>
