@@ -35,3 +35,29 @@ app.get('/Users', async (req, res) => {
   res.send(result); // Send fetched userCredentials as response
 });
 
+
+// GET route to retrieve Course Data from MongoDB
+app.post('/postUser', async (req, res) => {
+    let connection;
+    let result;
+    var data = {
+        name: req.body.name,
+        username: req.body.email,
+        password: req.body.password
+    }
+
+    // console.log(req)
+    try {
+        // Connect to MongoDB
+        connection = await client.connect();
+        let db = await connection.db("CarMaintenanceApp");
+        const userCredentials = await db.collection("UserCredentials");
+        console.log(data)
+        result = await userCredentials.insertOne(data); // Fetch userCredentials
+    } catch (e) {
+        console.log(e);
+    } finally {
+        await client.close(); // Close MongoDB connection
+    }
+    res.send(result); // Send fetched userCredentials as response
+  });
