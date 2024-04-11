@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "492309645022",
+    "firebase_url": "https://carmaintenanceapp-498c9-default-rtdb.firebaseio.com",
+    "project_id": "carmaintenanceapp-498c9",
+    "storage_bucket": "carmaintenanceapp-498c9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:492309645022:android:bebecdd258440c60d1e44f",
+        "android_client_info": {
+          "package_name": "com.example.carmaintenanceapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIVeLuUKQ7qgl3jRtWhDHTDMeuzmB8LJ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
