@@ -44,4 +44,5 @@
     <string name="add_service">Add Service</string>
     <string name="save">Save</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dbConnectionString">mongodb://dbUser:dbPassword@cluster0.movfunp.mongodb.net/?retryWrites=true&amp;w=majority&amp;appName=Cluster0</string>
 </resources>
