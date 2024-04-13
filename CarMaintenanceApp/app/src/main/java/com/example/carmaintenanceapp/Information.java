@@ -1,6 +1,8 @@
 package com.example.carmaintenanceapp;
 
+import android.content.Intent;
 import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -24,9 +26,8 @@ public class Information extends AppCompatActivity {
             } else if (id == R.id.navigation_schedule) {
                 selectedFragment = new ScheduleFragment();
             } else if (id == R.id.navigation_logout) {
-                selectedFragment = new LogoutFragment();
+                logout();// Handle logout
             }
-
 
             if (selectedFragment != null) {
                 getSupportFragmentManager().beginTransaction()
@@ -40,5 +41,12 @@ public class Information extends AppCompatActivity {
         if (savedInstanceState == null) {
             bottomNavigationView.setSelectedItemId(R.id.navigation_vehicle_info);
         }
+    }
+
+    //Logout Function
+    private void logout() {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+        finish();
     }
 }
