@@ -61,3 +61,72 @@ app.post('/postUser', async (req, res) => {
     }
     res.send(result); // Send fetched userCredentials as response
   });
+
+  // POST route to save service data to MongoDB
+  app.post('/postService', async (req, res) => {
+      let connection;
+      let result;
+      var data = {
+          serviceType: req.body.serviceType,
+          date: req.body.date,
+          notes: req.body.notes
+      };
+
+      try {
+          // Connect to MongoDB
+          connection = await client.connect();
+          let db = await connection.db("CarMaintenanceApp");
+          const services = await db.collection("Services");
+          result = await services.insertOne(data); // Insert service data
+      } catch (e) {
+          console.log(e);
+      } finally {
+          await client.close(); // Close MongoDB connection
+      }
+      res.send(result); // Send result of the operation
+  });
+
+  // POST route to add service type to ServiceList collection in MongoDB
+  app.post('/addServiceToList', async (req, res) => {
+      let connection;
+      let result;
+      const serviceType = req.body.serviceType;
+
+      try {
+          // Connect to MongoDB
+          connection = await client.connect();
+          const db = await connection.db("CarMaintenanceApp");
+          const serviceList = await db.collection("ServiceList");
+          result = await serviceList.insertOne({ serviceType });
+      } catch (e) {
+          console.log(e);
+          res.status(500).send("Internal Server Error");
+          return;
+      } finally {
+          await client.close(); // Close MongoDB connection
+      }
+
+      res.status(200).send("Service added to list successfully.");
+  });
+
+  // GET route to fetch service types from ServiceList collection in MongoDB
+  app.get('/getServiceTypes', async (req, res) => {
+      let connection;
+      let result;
+      try {
+          // Connect to MongoDB
+          connection = await client.connect();
+          const db = await connection.db("CarMaintenanceApp");
+          const serviceList = await db.collection("ServiceList");
+          result = await serviceList.find().toArray(); // Fetch all documents from ServiceList collection
+      } catch (e) {
+          console.log(e);
+          res.status(500).send("Internal Server Error");
+          return;
+      } finally {
+          await client.close(); // Close MongoDB connection
+      }
+
+      res.status(200).json(result);
+  });
+
