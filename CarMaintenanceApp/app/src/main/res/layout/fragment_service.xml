@@ -38,19 +38,28 @@
         android:minHeight="48dp" />
 
     <Button
-        android:id="@+id/buttonAddService"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:backgroundTint="#E10404"
-        android:text="@string/add_service" />
-
-    <Button
         android:id="@+id/buttonSave"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/black"
         android:text="@string/save"
         android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/editTextAddServices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Add Service Type To Maintenance List"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/buttonAddService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#E10404"
+        android:text="@string/add_service" />
 
 </LinearLayout>
