@@ -130,3 +130,27 @@ app.post('/postUser', async (req, res) => {
       res.status(200).json(result);
   });
 
+  // GET route to retrieve services based on date from MongoDB
+  app.get('/getServices', async (req, res) => {
+      let connection;
+      let result;
+      const date = req.query.date; // Get the date from query parameters
+
+      try {
+          // Connect to MongoDB
+          connection = await client.connect();
+          const db = await connection.db("CarMaintenanceApp");
+          const services = await db.collection("Services");
+          result = await services.find({ date: date }).toArray(); // Fetch services based on date
+      } catch (e) {
+          console.log(e);
+          res.status(500).send("Internal Server Error");
+          return;
+      } finally {
+          await client.close(); // Close MongoDB connection
+      }
+
+      res.status(200).json(result);
+  });
+
+
