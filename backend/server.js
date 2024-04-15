@@ -17,7 +17,7 @@ app.listen(port, () => console.log(`Listening on port ${port}`));
 const connectionString = "mongodb+srv://dbUser:dbPassword@cluster0.movfunp.mongodb.net/";
 const client = new mongodb.MongoClient(connectionString);
 
-// GET route to retrieve Course Data from MongoDB
+// GET route to retrieve User Credentials from MongoDB
 app.get('/Users', async (req, res) => {
   let connection;
   let result;
@@ -36,7 +36,7 @@ app.get('/Users', async (req, res) => {
 });
 
 
-// GET route to retrieve Course Data from MongoDB
+// POST route to retrieve User Credentials from MongoDB
 app.post('/postUser', async (req, res) => {
     let connection;
     let result;
