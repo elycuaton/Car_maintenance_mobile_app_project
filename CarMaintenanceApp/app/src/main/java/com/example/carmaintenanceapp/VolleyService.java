@@ -80,8 +80,8 @@ public class VolleyService {
         addToRequestQueue(jsonArrayRequest);
     }
 
-    public void getRequest(String url, com.example.carmaintenanceapp.VolleyCallback serviceType) {
-    }
+//    public void getRequest(String url, com.example.carmaintenanceapp.VolleyCallback serviceType) {
+//    }
 
     public interface VolleyCallback {
         void onSuccessResponse(JSONArray response);

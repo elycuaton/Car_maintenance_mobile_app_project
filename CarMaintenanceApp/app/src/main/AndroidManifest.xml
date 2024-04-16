@@ -15,24 +15,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CarMaintenanceApp"
         tools:targetApi="31">
+
+        <!-- Existing activities -->
         <activity
             android:name=".Information"
             android:exported="false" />
         <activity
-            android:name=".HomePage"
+            android:name=".SignUp"
             android:exported="false" />
         <activity
-            android:name=".SignUp"
+            android:name=".HomePage"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
 
+        <!-- New activity for showing vehicle details -->
+        <activity android:name=".VehicleDetailActivity"
+            android:exported="false" />
+    </application>
 </manifest>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Use a ScrollView for content that might not fit on the screen -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Back Button -->
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:backgroundTint="#6200EA"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- TextView for the vehicle's name -->
+            <TextView
+                android:id="@+id/tvVehicleName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vehicle Name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:layout_marginBottom="16dp" />
+
+            <!-- TextView for the vehicle's plate number -->
+            <TextView
+                android:id="@+id/tvVehiclePlateNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Plate Number"
+                android:layout_marginBottom="16dp" />
+
+            <!-- TextView for the vehicle's model -->
+            <TextView
+                android:id="@+id/tvVehicleModel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Model"
+                android:layout_marginBottom="16dp" />
+
+            <!-- TextView for the vehicle's year -->
+            <TextView
+                android:id="@+id/tvVehicleYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Year"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Button to delete the vehicle -->
+            <Button
+                android:id="@+id/btnDeleteVehicle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete Vehicle"
+                android:backgroundTint="#D32F2F"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
