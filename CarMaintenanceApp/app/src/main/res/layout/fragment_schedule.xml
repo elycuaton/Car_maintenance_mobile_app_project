@@ -25,21 +25,12 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textViewEventList1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:background="@drawable/service_event_background"
-                android:padding="16dp"
-                android:text="Oil Change - March 31, 2024" />
-
-            <TextView
                 android:id="@+id/textViewEventList"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:background="@drawable/service_event_background"
-                android:padding="16dp"/>
+                android:background="#FDFDFD"
+                android:padding="16dp" />
 
 
         </LinearLayout>
